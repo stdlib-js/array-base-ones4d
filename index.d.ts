@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2023 The Stdlib Authors.
@@ -16,14 +16,25 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
 
-var ones4d = require( './../lib' );
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@esm/index.d.ts"/>
 
-var out = ones4d( [ 1, 1, 1, 3 ] );
-console.log( out );
-// => [ [ [ [ 1.0, 1.0, 1.0 ] ] ] ]
+import { Collection, Array4D } from '@stdlib/types/array';
 
-out = ones4d( [ 1, 1, 3, 1 ] );
-console.log( out );
-// => [ [ [ [ 1.0 ], [ 1.0 ], [ 1.0 ] ] ] ]
+/**
+* Returns a four-dimensional nested array filled with ones.
+*
+* @param shape - array shape
+* @returns output array
+*
+* @example
+* var out = ones4d( [ 1, 1, 1, 3 ] );
+* // returns [ [ [ [ 1.0, 1.0, 1.0 ] ] ] ]
+*/
+declare function ones4d( shape: Collection<number> ): Array4D<number>;
+
+
+// EXPORTS //
+
+export = ones4d;
