@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import ones4d from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-ones4d@deno/mod.js';
+import ones4d from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-ones4d@v0.2.3-deno/mod.js';
 ```
 
 #### ones4d( shape )
@@ -85,7 +85,7 @@ var out = ones4d( [ 1, 1, 2, 3 ] );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import ones4d from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-ones4d@deno/mod.js';
+import ones4d from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-ones4d@v0.2.3-deno/mod.js';
 
 var out = ones4d( [ 1, 1, 1, 3 ] );
 // returns [ [ [ [ 1.0, 1.0, 1.0 ] ] ] ]
